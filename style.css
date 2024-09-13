@@ -1,0 +1,3197 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+/* HEADER CSS STYLING */
+
+.header-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 10rem;
+    position: relative;
+}
+
+.head-body {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(234, 240, 242);
+}
+
+.heady {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.logo {
+    width: 15%;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.burger {
+    font-size: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navlink {
+    width: 55%;
+    justify-content: center;
+}
+
+.navlink ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.navlink li {
+    float: left;
+    padding: 1rem;
+}
+
+.navlink li a{
+    color: rgb(61, 79, 96);
+    font-size: 1.6rem;
+    font-weight: 570;
+    text-decoration: none;
+}
+
+.acclog {
+    width: 25%;
+    justify-content: flex-end;
+}
+
+.btn {
+    border: 1px solid rgb(12, 24, 37);
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: rgb(12, 24, 37);
+    width: 30%;
+    text-align: center;
+}
+
+.btn1 {
+    border: none;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(12, 24, 37);
+    text-align: center;
+}
+
+/* SECTION 1 CSS STYLING */
+
+#section1 {
+    padding: 5rem;
+    gap: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(242, 247, 248);
+}
+
+.flex {
+    margin-top: 2rem;
+    width: 45rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.sec1a {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin: 9rem 0rem;
+}
+
+.sec1a h1 {
+    color: rgb(18, 34, 49);
+    font-size: 4.3rem;
+}
+
+.sec1a p {
+    color: rgb(61, 80, 97);
+    font-size: 2rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sec1a a {
+    background-color: rgb(18, 34, 49);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.sec1b {
+    position: relative;
+    animation: piggy 3s linear 2s infinite;
+}
+    
+@keyframes piggy {
+    0% {top: -2rem;}
+    15% {top: -1rem;}
+    30% {top: 0rem;}
+    45% {top: 1rem;}
+    60% {top: 2rem;}
+    75% {top: 0rem;}
+    100% {top: -2rem;}
+}
+
+.sec1ba {
+    position: absolute;
+    top: 0rem;
+    right: 0;
+}
+
+.sec1bb {
+    position: absolute;
+    top: 30rem;
+    transform: translateX(0rem);
+}
+
+.sec1bc {
+    position: absolute;
+    top: 30rem;
+    transform: translateX(35rem);
+}
+
+.sec1bd {
+    position: absolute;
+    top: 37rem;
+    transform: translateX(17rem);
+}
+
+.sec1be {
+    position: absolute;
+    top: 10rem;
+    transform: translateX(35rem);
+}
+
+.sec1bf {
+    position: absolute;
+    top: 10rem;
+    transform: translateX(0rem);
+}
+
+.sec1c {
+    width: 100%;
+    margin-top: 5rem;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec1ca {
+    float: left;
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.sec1cb h2 {
+    color: rgb(18, 34, 49);
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.sec1cb p {
+    color: rgb(61, 80, 97);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sec1cb a {
+    color: rgb(18, 34, 49);
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.sec1d {
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;
+}
+
+.sec1d h2 {
+    font-size: 4.5rem;
+}
+
+.sec1d p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+}
+
+.sec1e {
+    padding: 2.5rem;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1e:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.sec1e:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1e:hover h2 {
+    color: white;
+}
+
+.sec1e:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1e:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 20vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1e h2 {
+    font-size: 3.5rem;
+    color: rgb(16, 96, 214);
+}
+
+.sec1e p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1e a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(16, 96, 214);
+}
+
+.sec1f {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1f:hover .overlay1 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1f:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1f:hover h2 {
+    color: white;
+}
+
+.sec1f:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1f:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image1 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 20vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1f h2 {
+    font-size: 3.5rem;
+    color: rgb(34, 149, 242);
+}
+
+.sec1f p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 13rem;
+}
+
+.sec1f a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(34, 149, 242);
+}
+
+.sec1g {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1g:hover .overlay2 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1g:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1g:hover h2 {
+    color: white;
+}
+
+.sec1g:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1g:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image2 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 20vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1g h2 {
+    font-size: 3.5rem;
+    color: rgb(57, 194, 119);
+}
+
+.sec1g p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 13rem;
+}
+
+.sec1g a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(57, 194, 119);
+}
+
+.sec1h {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1h:hover .overlay3 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1h:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1h:hover h2 {
+    color: white;
+}
+
+.sec1h:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1h:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image3 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 20vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1h h2 {
+    font-size: 3.5rem;
+    color: rgb(229, 72, 155);
+}
+
+.sec1h p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1h a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(229, 72, 155);
+}
+
+.sec1i {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1i:hover .overlay4 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1i:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1i:hover h2 {
+    color: white;
+}
+
+.sec1i:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1i:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image4 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 20vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1i h2 {
+    font-size: 3.5rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec1i p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1i a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(12, 24, 37);
+}
+
+/* SECTION 2 CSS STYLING */
+
+#section2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sec2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.sec2a {
+    text-align: center;
+    margin-top: 10rem;
+}
+
+.sec2a h2 {
+    font-size: 5rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec2a p {
+    font-size: 2.5rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec2b {
+    width: 90rem;
+    height: 50vh;
+    background-color: rgb(121, 19, 229);
+    border-radius: 3rem;
+    margin-bottom: 20rem;
+}
+
+.sec2ba {
+    margin-left: 7rem;
+    margin-top: 7rem;
+}
+
+.sec2ba h2 {
+    font-size: 3.5rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.sec2ba p {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    color: rgb(254, 214, 241);
+    margin-bottom: 10rem;
+}
+
+.sec2ba a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.sec2bb {
+    float: right;
+    margin-right: 4rem;
+    transform: translateY(-30rem);
+}
+
+/* SECTION 3 CSS STYLING */
+
+#section3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(242, 247, 248);
+}
+
+.sec3a {
+    text-align: center;
+    width: 70vw;
+    height: 20vh;
+    padding: 5rem;
+    margin-top: 8rem;
+}
+
+.sec3a h2 {
+    font-size: 4rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec3a p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec3b iframe {
+    border-radius: 2rem;
+    margin-top: 7rem;
+}
+
+.sec3c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vh;
+}
+
+.sec3ca img {
+    border-radius: 50%;
+}
+
+.sec3cb h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.sec3cc a {
+    color: rgb(18, 34, 49);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    border: 1px solid grey;
+}
+
+.sec3cd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 30vh;
+}
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1.2rem;
+    color: rgb(3,4,94);
+    background-color: rgb(245,238,132);
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: black;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+
+/* Carousel Section Styling */
+.carousel-section {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Text above the Carousel */
+  .carousel-text {
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-text p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Carousel Styling */
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 30rem;
+    flex: 0 0 100%;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+/* FOOTER CSS STYLING */
+
+#foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.footA {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.footB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+}
+
+.footB a {
+    padding: 3rem;
+}
+
+.footC {
+    height: 20vh;
+    width: 20vw;
+}
+
+.footD {
+    height: 20vh;
+    width: 10vw;
+    font-size: 1.2rem;
+}
+
+.footD h4 {
+    margin-bottom: 1rem;
+}
+
+.footD ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footD li {
+    padding-bottom: 1rem;
+}
+
+.footD a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footE {
+    height: 20vh;
+    width: 10vw;
+    font-size: 1.2rem;
+}
+
+.footE h4 {
+    margin-bottom: 1rem;
+}
+
+.footE ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footE li {
+    padding-bottom: 1rem;
+}
+
+.footE a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footF {
+    height: 20vh;
+    width: 10vw;
+    font-size: 1.2rem;
+}
+
+.footF h4 {
+    margin-bottom: 1rem;
+}
+
+.footF ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footF li {
+    padding-bottom: 1rem;
+}
+
+.footF a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footG {
+    height: 20vh;
+    width: 15vw;
+    text-align: end;
+}
+
+.footH {
+    line-height: 1.5rem;
+}
+
+.footH p {
+    margin-bottom: 2rem;
+    font-size: 1.2rem;
+    color: rgb(61, 80, 97);
+}
+
+.footI {
+    border: none;
+    height: 0.1rem;
+    width: 65vw;
+    background-color: rgba(128, 128, 128, 0.553);
+}
+
+.footJ {
+    height: 25vh;
+    width: 65vw;
+    text-align: start;
+    font-size: 1.2rem;
+}
+
+.footJ h5 {
+    color: rgb(61, 80, 97);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.footJ h6 {
+    color: rgb(61, 80, 97);
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.footJ p {
+    color: blue;
+    font-size: 1rem;
+}
+
+/* TABLET VERSION */
+
+@media screen and (max-width: 1100px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    font-size: 60%;
+    overflow-x: hidden;
+}
+
+/* HEADER CSS STYLING */
+
+.header-container {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(242, 247, 248);
+}
+
+.head-body {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(234, 240, 242);
+}
+
+.heady {
+    display: flex;
+    align-items: center;
+    width: 30%;
+}
+
+.logo {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.logo img {
+    width: 20rem;
+}
+
+.burger {
+    font-size: 4rem;
+    cursor: pointer;
+    display: none;
+}
+
+.navlink {
+    width: 65%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.navlink ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.navlink li {
+    float: left;
+    padding: 1rem;
+}
+
+.navlink li a{
+    color: rgb(61, 79, 96);
+    font-size: 1.6rem;
+    font-weight: 570;
+    text-decoration: none;
+}
+
+.acclog {
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.btn {
+    border: 1px solid rgb(12, 24, 37);
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: rgb(12, 24, 37);
+    width: 30%;
+    text-align: center;
+}
+
+.btn1 {
+    border: none;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(12, 24, 37);
+    text-align: center;
+}
+
+/* SECTION 1 CSS STYLING */
+
+#section1 {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(242, 247, 248);
+    gap: 2rem;
+}
+
+.flex {
+    margin-top: 2rem;
+    width: 80rem;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sec1a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec1a h1 {
+    color: rgb(18, 34, 49);
+    font-size: 5rem;
+}
+
+.sec1a p {
+    color: rgb(61, 80, 97);
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sec1a a {
+    background-color: rgb(18, 34, 49);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.sec1b {
+    display: flex;
+    margin-right: 7rem;
+    position: relative;
+    animation: piggy 3s linear 2s infinite;
+    display: none;
+}
+    
+@keyframes piggy {
+    0% {top: -2rem;}
+    15% {top: -1rem;}
+    30% {top: 0rem;}
+    45% {top: 1rem;}
+    60% {top: 2rem;}
+    75% {top: 0rem;}
+    100% {top: -2rem;}
+}
+
+.sec1ba {
+    position: absolute;
+    top: 0rem;
+    right: 0;
+}
+
+.sec1bb {
+    position: absolute;
+    top: 30rem;
+    transform: translateX(0rem);
+    display: none;
+}
+
+.sec1bc {
+    position: absolute;
+    top: 30rem;
+    transform: translateX(2rem);
+    display: none;
+}
+
+.sec1bd {
+    position: absolute;
+    top: 37rem;
+    transform: translateX(5rem);
+    display: none;
+}
+
+.sec1be {
+    position: absolute;
+    top: 10rem;
+    transform: translateX(2rem);
+    display: none;
+}
+
+.sec1bf {
+    position: absolute;
+    top: 10rem;
+    transform: translateX(-3rem);
+    display: none;
+}
+
+.sec1c {
+    width: 80rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec1ca {
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.sec1cb h2 {
+    color: rgb(18, 34, 49);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.sec1cb p {
+    color: rgb(61, 80, 97);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sec1cb a {
+    color: rgb(18, 34, 49);
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.sec1d {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+
+.sec1d h2 {
+    font-size: 4.5rem;
+}
+
+.sec1d p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+}
+
+.sec1e {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1e:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.sec1e:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1e:hover h2 {
+    color: white;
+}
+
+.sec1e:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1e:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1e h2 {
+    font-size: 3.5rem;
+    color: rgb(16, 96, 214);
+}
+
+.sec1e p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1e a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(16, 96, 214);
+}
+
+.sec1f {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1f:hover .overlay1 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1f:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1f:hover h2 {
+    color: white;
+}
+
+.sec1f:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1f:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image1 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1f h2 {
+    font-size: 3.5rem;
+    color: rgb(34, 149, 242);
+}
+
+.sec1f p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 13rem;
+}
+
+.sec1f a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(34, 149, 242);
+}
+
+.sec1g {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1g:hover .overlay2 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1g:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1g:hover h2 {
+    color: white;
+}
+
+.sec1g:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1g:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image2 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1g h2 {
+    font-size: 3.5rem;
+    color: rgb(57, 194, 119);
+}
+
+.sec1g p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 13rem;
+}
+
+.sec1g a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(57, 194, 119);
+}
+
+.sec1h {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1h:hover .overlay3 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1h:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1h:hover h2 {
+    color: white;
+}
+
+.sec1h:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1h:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image3 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1h h2 {
+    font-size: 3.5rem;
+    color: rgb(229, 72, 155);
+}
+
+.sec1h p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1h a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(229, 72, 155);
+}
+
+.sec1i {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    margin-bottom: 7rem;
+    position: relative;
+}
+
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1i:hover .overlay4 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1i:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1i:hover h2 {
+    color: white;
+}
+
+.sec1i:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1i:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image4 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1i h2 {
+    font-size: 3.5rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec1i p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1i a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(12, 24, 37);
+}
+
+/* SECTION 2 CSS STYLING */
+
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec2a {
+    text-align: center;
+    height: 12vh;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.sec2a h2 {
+    font-size: 4rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec2a p {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec2b {
+    width: 80%;
+    height: 70%;
+    background-color: rgb(121, 19, 229);
+    border-radius: 3rem;
+    margin-bottom: 20rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sec2ba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8rem;
+}
+
+.sec2ba h2 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 3rem;
+}
+
+.sec2ba p {
+    font-size: 2.2rem;
+    line-height: 2.5rem;
+    padding-bottom: 2rem;
+    color: rgb(254, 214, 241);
+}
+
+.sec2ba a {
+    margin-top: -10rem;
+    margin-bottom: 4rem;
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+}
+
+.sec2bb {
+    display: flex;
+    margin-left: 13rem;
+    align-items: center;
+    display: none;
+}
+
+.sec2bb img {
+    width: 70%;
+    height: 100%;
+}
+
+/* SECTION 3 CSS STYLING */
+
+#section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(242, 247, 248);
+}
+
+.sec3a {
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    padding: 5rem;
+    margin-top: 8rem;
+}
+
+.sec3a h2 {
+    font-size: 4rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec3a p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec3b iframe {
+    border-radius: 2rem;
+    margin-top: 7rem;
+    width: 90vw;
+}
+
+.sec3c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vh;
+}
+
+.sec3ca img {
+    border-radius: 50%;
+}
+
+.sec3cb h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.sec3cc a {
+    color: rgb(18, 34, 49);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    border: 1px solid grey;
+}
+
+.sec3cd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50rem;
+    height: 30vh;
+}
+
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1.2rem;
+    color: rgb(3,4,94);
+    background-color: rgb(245,238,132);
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: black;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+
+/* Carousel Section Styling */
+.carousel-section {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Text above the Carousel */
+  .carousel-text {
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-text p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Carousel Styling */
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 30rem;
+    flex: 0 0 100%;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+/* FOOTER CSS STYLING */
+
+#foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.footA {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.footB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-bottom: 3rem;
+}
+
+.footB img {
+    width: 100%;
+}
+
+.footB a {
+    padding: 1rem;
+}
+
+.footC {
+    height: 20vh;
+    width: 100vw;
+    padding: 5rem;
+}
+
+.footD {
+    height: 20vh;
+    width: 50vw;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.footD h4 {
+    margin-bottom: 1rem;
+}
+
+.footD ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footD li {
+    padding-bottom: 1rem;
+}
+
+.footD a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footE {
+    height: 20vh;
+    width: 50vw;
+    font-size: 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.footE h4 {
+    margin-bottom: 1rem;
+}
+
+.footE ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footE li {
+    padding-bottom: 1rem;
+}
+
+.footE a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footF {
+    height: 10vh;
+    width: 100vw;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+    margin-bottom: 2rem;
+}
+
+.footF h4 {
+    margin-bottom: 1rem;
+}
+
+.footF ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footF li {
+    padding-bottom: 1rem;
+}
+
+.footF a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footG {
+    height: 12vh;
+    width: 100vw;
+}
+
+.footH {
+    line-height: 2rem;
+    text-align: start;
+    padding-left: 5rem;
+}
+
+.footH p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: rgb(61, 80, 97);
+}
+
+.footI {
+    border: none;
+    height: 0.1rem;
+    width: 90vw;
+    background-color: rgba(128, 128, 128, 0.553);
+    margin-bottom: 1rem;
+    margin-top: 3rem;
+}
+
+.footJ {
+    height: 25vh;
+    width: 90vw;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.footJ h5 {
+    color: rgb(61, 80, 97);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.footJ h6 {
+    color: rgb(61, 80, 97);
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.footJ p {
+    color: blue;
+    font-size: 1.5rem;
+}
+}
+
+/* MOBILE VERSION */
+
+@media screen and (max-width: 600px) {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Plus Jakarta Sans", sans-serif;
+}
+
+html {
+    font-size: 50%;
+    overflow-x: hidden;
+}
+
+/* HEADER CSS STYLING */
+
+.header-container {
+    display: flex;
+    width: 100%;
+    height: 10rem;
+    background-color: rgb(242, 247, 248);
+}
+
+.head-body {
+    width: 100%;
+    height: 10rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(234, 240, 242);
+}
+
+.heady {
+    display: flex;
+    width: 90%;
+}
+
+.logo {
+    display: flex;
+    padding-left: 3rem;
+}
+
+.logo img {
+    width: 80%;
+}
+
+.burger {
+    padding-bottom: 1rem;
+    width: 10%;
+    font-size: 5rem;
+    display: block;
+    justify-content: flex-end;
+}
+
+.navlink {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    background-color: #0066cc;
+    top: 60px;
+    right: 0;
+    width: 100%;
+    text-align: center;
+}
+
+.navlink.active {
+    display: flex;
+}
+
+.navlink ul {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    list-style-type: none;
+}
+
+.navlink li {
+    margin: 1rem 0;
+}
+
+.navlink li a{
+    color: white;
+    font-size: 1.5rem;
+    font-weight: 570;
+}
+
+.acclog {
+    width: 20%;
+    padding: 2rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    display: none;
+}
+
+.btn {
+    border: 1px solid rgb(12, 24, 37);
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    color: rgb(12, 24, 37);
+    width: 30%;
+    text-align: center;
+}
+
+.btn1 {
+    border: none;
+    padding: 1.5rem;
+    text-decoration: none;
+    font-size: 1.6rem;
+    border-radius: 1rem;
+    color: white;
+    background-color: rgb(12, 24, 37);
+    text-align: center;
+}
+
+/* SECTION 1 CSS STYLING */
+
+#section1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    background-color: rgb(242, 247, 248);
+    gap: 2rem;
+}
+
+.flex {
+    margin-top: 2rem;
+    height: 45vh;
+    width: 80vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.sec1a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.sec1a h1 {
+    color: rgb(18, 34, 49);
+    font-size: 5rem;
+}
+
+.sec1a p {
+    color: rgb(61, 80, 97);
+    font-size: 2.2rem;
+    line-height: 3rem;
+    margin-bottom: 5rem;
+}
+
+.sec1a a {
+    background-color: rgb(18, 34, 49);
+    color: white;
+    font-size: 1.5rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+}
+
+.sec1b {
+    animation: piggy 3s linear 2s infinite;
+    margin-right: 1rem;
+    position: relative;
+    display: none;
+}
+    
+@keyframes piggy {
+    0% {top: -2rem;}
+    15% {top: -1rem;}
+    30% {top: 0rem;}
+    45% {top: 1rem;}
+    60% {top: 2rem;}
+    75% {top: 0rem;}
+    100% {top: -2rem;}
+}
+
+.sec1ba {
+    position: absolute;
+    top: 0rem;
+    right: 0rem;
+}
+
+.sec1bb {
+    position: absolute;
+    top: 30rem;
+    left: 6rem;
+}
+
+.sec1bc {
+    position: absolute;
+    top: 30rem;
+    right: 0rem;
+}
+
+.sec1bd {
+    position: absolute;
+    top: 45rem;
+    right: 15rem;
+}
+
+.sec1be {
+    position: absolute;
+    top: 10rem;
+    right: 0rem;
+}
+
+.sec1bf {
+    position: absolute;
+    top: 10rem;
+    left: 8rem;
+}
+
+.sec1c {
+    width: 80vw;
+    height: 40vh;
+    margin-top: 0rem;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.sec1ca {
+    margin-right: 2rem;
+    margin-top: 3rem;
+}
+
+.sec1cb h2 {
+    color: rgb(18, 34, 49);
+    font-size: 3.5rem;
+    margin-bottom: 1rem;
+}
+
+.sec1cb p {
+    color: rgb(61, 80, 97);
+    font-size: 1.5rem;
+    line-height: 3rem;
+    margin-bottom: 2rem;
+}
+
+.sec1cb a {
+    color: rgb(18, 34, 49);
+    font-size: 1.3rem;
+    text-decoration: none;
+    border-radius: 1rem;
+    font-weight: 600;
+}
+
+.sec1d {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    gap: 2rem;
+    margin-top: -5rem;
+}
+
+.sec1d h2 {
+    font-size: 4.5rem;
+}
+
+.sec1d p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+}
+
+.sec1e {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1e:hover .overlay {
+    width: 100%;
+    left: 0;
+}
+
+.sec1e:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1e:hover h2 {
+    color: white;
+}
+
+.sec1e:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1e:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1e h2 {
+    font-size: 3.5rem;
+    color: rgb(16, 96, 214);
+}
+
+.sec1e p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1e a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(16, 96, 214);
+}
+
+.sec1f {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay1 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1f:hover .overlay1 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1f:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1f:hover h2 {
+    color: white;
+}
+
+.sec1f:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1f:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image1 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1f h2 {
+    font-size: 3.5rem;
+    color: rgb(34, 149, 242);
+}
+
+.sec1f p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 13rem;
+}
+
+.sec1f a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(34, 149, 242);
+}
+
+.sec1g {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay2 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1g:hover .overlay2 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1g:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1g:hover h2 {
+    color: white;
+}
+
+.sec1g:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1g:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image2 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1g h2 {
+    font-size: 3.5rem;
+    color: rgb(57, 194, 119);
+}
+
+.sec1g p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 13rem;
+}
+
+.sec1g a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(57, 194, 119);
+}
+
+.sec1h {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    position: relative;
+}
+
+.overlay3 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1h:hover .overlay3 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1h:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1h:hover h2 {
+    color: white;
+}
+
+.sec1h:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1h:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image3 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1h h2 {
+    font-size: 3.5rem;
+    color: rgb(229, 72, 155);
+}
+
+.sec1h p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1h a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(229, 72, 155);
+}
+
+.sec1i {
+    display: flex;
+    padding: 2.5rem;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 2rem;
+    border-radius: 2rem;
+    border: none;
+    background-color: white;
+    margin-bottom: 7rem;
+    position: relative;
+}
+
+.overlay4 {
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    right: 0;
+    border-radius: 2rem;
+    overflow: hidden;
+    width: 0;
+    height: 100%;
+    transition: .5s ease;
+}
+  
+.sec1i:hover .overlay4 {
+    width: 100%;
+    left: 0;
+}
+
+.sec1i:hover {
+    background-color: rgb(16, 96, 214);
+}
+
+.sec1i:hover h2 {
+    color: white;
+}
+
+.sec1i:hover p {
+    color: white;
+    font-weight: lighter;
+}
+
+.sec1i:hover a {
+    color: white;
+    font-weight: lighter;
+}
+ 
+.image4 {
+    position: absolute;
+    overflow: hidden;
+    top: 75%;
+    left: 65%;
+    width: 40vw;
+    transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+}
+
+.sec1i h2 {
+    font-size: 3.5rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec1i p {
+    font-size: 2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec1i a {
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: rgb(12, 24, 37);
+}
+
+/* SECTION 2 CSS STYLING */
+
+#section2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.sec2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.sec2a {
+    text-align: center;
+    height: 12vh;
+    margin-top: 10rem;
+    margin-bottom: 10rem;
+}
+
+.sec2a h2 {
+    font-size: 4rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec2a p {
+    font-size: 2.2rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+}
+
+.sec2b {
+    width: 80%;
+    height: 70rem;
+    background-color: rgb(121, 19, 229);
+    border-radius: 3rem;
+    margin-bottom: 10rem;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.sec2ba {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-right: 8rem;
+}
+
+.sec2ba h2 {
+    font-size: 4rem;
+    color: white;
+    margin-bottom: 1rem;
+}
+
+.sec2ba p {
+    font-size: 2.2rem;
+    line-height: 2.7rem;
+    color: rgb(254, 214, 241);
+    margin-bottom: 3rem;
+}
+
+.sec2ba a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.5rem;
+    display: none;
+}
+
+.sec2bb {
+    display: flex;
+    align-items: center;
+    margin-left: 13rem;
+    display: none;
+}
+
+.sec2bb img {
+    width: 70%;
+    height: 100%;
+}
+
+/* SECTION 3 CSS STYLING */
+
+#section3 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: rgb(242, 247, 248);
+}
+
+.sec3a {
+    text-align: center;
+    width: 100%;
+    height: 20vh;
+    padding: 5rem;
+    margin-top: 8rem;
+}
+
+.sec3a h2 {
+    font-size: 4rem;
+    color: rgb(12, 24, 37);
+}
+
+.sec3a p {
+    font-size: 1.8rem;
+    line-height: 3rem;
+    color: rgb(61, 80, 97);
+    margin-bottom: 15rem;
+}
+
+.sec3b iframe {
+    border-radius: 2rem;
+    margin-top: 7rem;
+    width: 90vw;
+}
+
+.sec3c {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vh;
+}
+
+.sec3ca img {
+    border-radius: 50%;
+}
+
+.sec3cb h2 {
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+}
+
+.sec3cc a {
+    color: rgb(18, 34, 49);
+    font-size: 1.3rem;
+    text-decoration: none;
+    padding: 1.5rem 2rem;
+    border-radius: 1rem;
+    margin-right: 1rem;
+    font-weight: 500;
+    border: 1px solid grey;
+}
+
+.sec3cd {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 80vw;
+    height: 30vh;
+}
+.about-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    padding: 1.2rem;
+    color: rgb(3,4,94);
+    background-color: rgb(245,238,132);
+    margin-top: 1rem;
+    border: none;
+    border-radius: 4px;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  .modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 2rem;
+    border-radius: 0.5rem;
+    width: 80%;
+    max-width: 600px;
+  }
+  
+  .close {
+    color: black;
+    float: right;
+    font-size: 2rem;
+    cursor: pointer;
+  }
+  
+
+/* Carousel Section Styling */
+.carousel-section {
+    padding: 2rem;
+    background-color: #fff;
+    text-align: center;
+  }
+  
+  /* Text above the Carousel */
+  .carousel-text {
+    margin-bottom: 2rem;
+  }
+  
+  .carousel-text h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 1rem;
+  }
+  
+  .carousel-text p {
+    font-size: 1.1rem;
+    color: #666;
+  }
+  
+  /* Carousel Styling */
+  .carousel-container {
+    position: relative;
+    width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+  }
+  
+  .carousel {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+  }
+  
+  .carousel img {
+    width: 100%;
+    height: 30rem;
+    flex: 0 0 100%;
+  }
+  
+  .carousel-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    border: none;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
+  
+  .prev {
+    left: 0;
+  }
+  
+  .next {
+    right: 0;
+  }
+
+/* FOOTER CSS STYLING */
+
+#foot {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-height: 80vh;
+}
+
+.footA {
+    width: 100vw;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-top: 10rem;
+    margin-bottom: 3rem;
+}
+
+.footB {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 90vw;
+    margin-bottom: 3rem;
+}
+
+.footB img {
+    width: 100%;
+}
+
+.footB a {
+    padding: 1rem;
+}
+
+.footC {
+    height: 20vh;
+    width: 100vw;
+    padding: 5rem;
+}
+
+.footD {
+    height: 20vh;
+    width: 50vw;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.footD h4 {
+    margin-bottom: 1rem;
+}
+
+.footD ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.footD li {
+    padding-bottom: 1rem;
+}
+
+.footD a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footE {
+    height: 20vh;
+    width: 50vw;
+    font-size: 1.5rem;
+}
+
+.footE h4 {
+    margin-bottom: 1rem;
+}
+
+.footE ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footE li {
+    padding-bottom: 1rem;
+}
+
+.footE a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footF {
+    height: 10vh;
+    width: 100vw;
+    font-size: 1.5rem;
+    padding-left: 5rem;
+}
+
+.footF h4 {
+    margin-bottom: 1rem;
+}
+
+.footF ul {
+    list-style-type: none;
+    margin-bottom: 1rem;
+}
+
+.footF li {
+    padding-bottom: 1rem;
+}
+
+.footF a {
+    text-decoration: none;
+    color: rgba(61, 80, 97, 0.714);
+}
+
+.footG {
+    height: 12vh;
+    width: 100vw;
+}
+
+.footH {
+    line-height: 1.5rem;
+    text-align: start;
+    padding-left: 5rem;
+}
+
+.footH p {
+    margin-bottom: 2rem;
+    font-size: 1.5rem;
+    color: rgb(61, 80, 97);
+}
+
+.footI {
+    border: none;
+    height: 0.1rem;
+    width: 90vw;
+    background-color: rgba(128, 128, 128, 0.553);
+}
+
+.footJ {
+    height: 25vh;
+    width: 90vw;
+    text-align: start;
+    font-size: 1.5rem;
+}
+
+.footJ h5 {
+    color: rgb(61, 80, 97);
+    margin-top: 2rem;
+    margin-bottom: 4rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.footJ h6 {
+    color: rgb(61, 80, 97);
+    margin-bottom: 3rem;
+    line-height: 1.5rem;
+    font-weight: lighter;
+}
+
+.footJ p {
+    color: blue;
+    font-size: 1.5rem;
+}
+}
